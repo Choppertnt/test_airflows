@@ -7,7 +7,7 @@ from datetime import datetime
 with DAG(
     dag_id='hello_world_k3s',
     start_date=datetime(2023, 1, 1),
-    schedule_interval=None, # รันเมื่อสั่งเท่านั้น (Manual)
+    schedule=None, # รันเมื่อสั่งเท่านั้น (Manual)
     catchup=False,
     tags=['example'],
 ) as dag:
